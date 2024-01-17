@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let Greet = () => {
+            let uname = document.getElementById('txtName').value //return textbox value
+            // alert('Hello ' + uname)
+            let span = document.querySelector('span');
+            span.innerText = 'Hello ' + uname;
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" id='txtName'></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Greet" onclick="Greet()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span style="color: rebeccapurple;"></span>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+let obj = new String();
+let str = "All glitters are not gold";
+console.log(str.length);
+console.log(str[3]);
+console.log(str.toUpperCase());
+console.log(str);
+console.log(str.toLowerCase());
+console.log(str.charAt(2));
+console.log(str.indexOf("l"));
+console.log(str.lastIndexOf("l"));

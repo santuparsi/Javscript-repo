@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        MouseOver = () => {
+            document.images[0].src = '../B.jpg'
+        }
+        MouseOut = () => {
+            document.images['img1'].src = '../A.jpg'
+        }
+    </script>
+</head>
+
+<body>
+    <img id="img1" src="../A.jpg" width="200" height="200" onmouseover="MouseOver()"
+     onmouseout="MouseOut()">
+</body>
+
+</html>

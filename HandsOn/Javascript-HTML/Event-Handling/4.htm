@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let setColor = () => {
+            let color = document.getElementById('s1').value; //select item from the dropdown
+            // alert('U Selected ' + color);
+            //set color the page background
+            document.bgColor = color;
+        }
+
+    </script>
+</head>
+
+<body onload="setColor()">
+    <table>
+        <tr>
+            <td>Select Color</td>
+            <td>
+                <select id="s1" onchange="setColor()">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Yellow</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

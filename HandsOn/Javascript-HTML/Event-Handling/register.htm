@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Validate() {
+            if (!ValidateName()) {
+                alert("Invalid Name");
+                event.preventDefault();
+            }
+            else if (!ValidateMobile()) {
+                alert("Invalid Mobile");
+                event.preventDefault();
+            }
+        }
+        function ValidateName() {
+            let uname = document.getElementById('txtName').value;
+            let pattern = '^[a-zA-Z ]{2,10}$' //validate name
+            var obj = new RegExp(pattern) //create object to RegExp
+            return obj.test(uname) //test input value with pattern
+        }
+        function ValidateMobile() {
+            let mobile = document.getElementById('txtMobile').value;
+            let pattern = '^[6-9]\\d{9}$' //validate mobile
+            var obj = new RegExp(pattern) //create object to RegExp
+            return obj.test(mobile) //test input value with pattern
+        }
+        function ValidateEmail() {
+            let mobile = document.getElementById('txtEmail').value;
+            let pattern = '^[a-z][a-zA-Z0-9_]+@[a-z]{2,}[.]{1}[a-z]{2,3}$' //validate mobile
+            var obj = new RegExp(pattern) //create object to RegExp
+            return obj.test(mobile) //test input value with pattern
+        }
+    </script>
+</head>
+
+<body>
+    <form action="http://www.google.co.in" onsubmit="Validate()">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text" id='txtName'></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="text" id=txtMobile></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id=txtEmail></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="Submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
