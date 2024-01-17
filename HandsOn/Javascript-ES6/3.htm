@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Square(no)
+        {
+            return no*no;
+        }
+        function Sum(...a) //... spread operator
+        {
+            let sum=0;
+            for(let k of a)
+            {
+                sum=sum+k;
+            }
+            document.write("Sum of Array no's "+sum+'<br>');
+            return sum;
+        }
+        Sum(23,34,45,56,67);
+        Sum(34,45,56,67);
+        Sum(89,90,87);
+        let result=Square(12);
+        document.write(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
