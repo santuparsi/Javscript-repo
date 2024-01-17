@@ -1,0 +1,10 @@
+What is Javascript?
+====================
+1. It is a scripting lang.
+2. It is one of the prerequisite for Angular,React,Vue and many other javascript frameworks.
+3.Javascript is object based
+4.Javascript is casesensitive.
+5.IDE for Javascipt
+	a. Visual Studio Code
+	b. Visual Studio
+	c. Notepad++

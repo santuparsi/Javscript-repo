@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="div1">
+    <p>I am Para1</p>
+    <p>I am Para2</p>
+    <p>I am Para3</p>
+  </div>
+  <script>
+    let items=document.getElementsByTagName('p'); //return all para objects from html document
+    items[1].style.color='green';
+    items[2].style.color='red';
+    alert(items[2].innerText)
+    let obj=document.getElementById('div1'); //returns div object
+    alert(obj.innerHTML)
+  </script>
+</body>
+</html>
