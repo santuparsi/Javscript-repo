@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Validate()
+        {
+            let uname=document.getElementById('txtUname').value;
+            let pwd=document.getElementById('txtPwd').value;
+            if(uname=='')
+            {
+                document.getElementById('s1').innerText='Pls Enter Name';
+                event.preventDefault(); //restrict form to redirect to server
+            }
+            else if(pwd=='')
+            {
+                document.getElementById('s1').innerText='Pls Enter Password';
+                event.preventDefault(); 
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="http://www.google.co.in" onsubmit="Validate()">
+        <table>
+            <tr>
+                <td>UserName</td>
+                <td><input type="text" id='txtUname'></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id='txtPwd'></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="SingIn">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="s1" style="color: brown;"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
